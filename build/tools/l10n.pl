@@ -48,7 +48,7 @@ __PACKAGE__->$action();
 sub wrap {
   require Text::Wrap;
   no warnings qw(once);
-  local $Text::Wrap::columns = 88;
+  local $Text::Wrap::columns = 78;
 
   my (@text);
   open(my $fh, "<:encoding(UTF-8)", $OPTIONS{file});
