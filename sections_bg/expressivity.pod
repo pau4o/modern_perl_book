@@ -63,7 +63,8 @@ the sense that most everyone wants to help babies learn to communicate well.
 Everyone begins as a novice. Through practice and learning from more experienced
 programmers, you will understand and adopt more powerful idioms and techniques.
 
-For example, an experienced Perl hacker might triple a list of numbers with:
+Оптитният Perl-хакер например би умножил всеки елемент от даден списък с числа
+по следния начин:
 
 =begin programlisting
 
@@ -71,7 +72,7 @@ For example, an experienced Perl hacker might triple a list of numbers with:
 
 =end programlisting
 
-... and a Perl adept might write:
+... а пък някой вещ в Perl може да напише:
 
 =begin programlisting
 
@@ -84,7 +85,7 @@ For example, an experienced Perl hacker might triple a list of numbers with:
 
 =end programlisting
 
-... while a novice might try:
+... докато новакът би опитал следното:
 
 =begin programlisting
 
@@ -97,8 +98,8 @@ For example, an experienced Perl hacker might triple a list of numbers with:
 
 =end programlisting
 
-All three approaches accomplish the same thing, but each uses Perl in a
-different way.
+И трите подхода постигат един и същи резултат, но всеки от тях ползва
+Perl по различен начин.
 
 Experience writing Perl will help you to focus on I<what> you want to do rather
 than I<how> to do it. Even so, Perl will happily run simple programs. You can
