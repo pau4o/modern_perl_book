@@ -5,12 +5,21 @@ use warnings;
 
 use Pod::PseudoPod::HTML;
 use File::Spec::Functions qw( catfile catdir splitpath );
-
+use lib('./build/tools');
+use MPBUtils;
+use Data::Dumper;
 # P::PP::H uses Text::Wrap which breaks HTML tags
 local *Text::Wrap::wrap;
 *Text::Wrap::wrap = sub { $_[2] };
+my $util = MPBUtils->new(); 
 
-my @chapters = get_chapter_list();
+
+
+my @chapters = $util->get_build_chapter_list();
+
+warn Dumper(\@ARGV,\@chapters);
+#exit;
+
 my $anchors  = get_anchors(@chapters);
 
 sub Pod::PseudoPod::HTML::end_L
@@ -27,7 +36,7 @@ sub Pod::PseudoPod::HTML::end_L
 
 for my $chapter (@chapters)
 {
-    my $out_fh = get_output_fh($chapter);
+    my $out_fh = $util->get_html_output_fh($chapter);
     my $parser = Pod::PseudoPod::HTML->new();
 
     $parser->output_fh($out_fh);
@@ -69,23 +78,6 @@ sub slurp
     return do { local @ARGV = @_; local $/ = <>; };
 }
 
-sub get_chapter_list
-{
-    my $glob_path = catfile( qw( build chapters chapter_??.pod ) );
-    return glob $glob_path;
-}
 
-sub get_output_fh
-{
-    my $chapter = shift;
-    my $name    = ( splitpath $chapter )[-1];
-    my $htmldir = catdir( qw( build html ) );
 
-    $name       =~ s/\.pod/\.html/;
-    $name       = catfile( $htmldir, $name );
 
-    open my $fh, '>:utf8', $name
-        or die "Cannot write to '$name': $!\n";
-
-    return $fh;
-}
