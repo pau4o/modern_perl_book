@@ -2,7 +2,8 @@
 
 use strict;
 use warnings;
-
+# input/output default encoding will be UTF-8
+use open ':encoding(utf8)';
 use Pod::PseudoPod::HTML;
 use File::Spec::Functions qw( catfile catdir splitpath );
 use lib('./build/tools');
