@@ -128,3 +128,14 @@ So, to generate the book in HTML in Bulgarian:
     $ perl build/tools/build_html.pl bg
 
 Now go to build/html/_bg and review the translated chapters.
+
+If you want to help with the translation in Bulgarian:
+
+    1. go and clone the repo (https://github.com/kberov/modern_perl_book/)
+    2. Copy the file you want to translate in sections_bg/
+    3. Translate it. The format is Pod::PseudoPod.
+    4. To do spellcheck on the command line (linux)
+    Example:
+      $ aspell -d bg-w_english  -c $HOME/modern_perl_book/sections_bg/expressivity.pod
+
+Happy translating!
