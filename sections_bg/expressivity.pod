@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 Изразителност
 
 Z<expressivity>
@@ -25,45 +27,46 @@ Perl-хакерите имат лозунг: I<TIMTOWTDI>, произнася с
 Въпреки, че тази изразителност позволява на майсторите да създават изумителни
 програми, тя позволява и на невнимателните и неразумните да създават бъркотии.
 Опитът и добрият вкус ще ви напътстват в писането на велик код. Изборът е ваш,
-но мислете винаги доклоко е четим и как ще се поддържа кода ви от тези,
+но мислете винаги доколко е четим и как ще се поддържа кода ви от тези,
 които идват след вас.
 
 Новаците в Perl може би често се сблъскват с неразбираеми за тях конструкции.
 Много от тези идиоми (L<idioms>) предоставят голяма (макар и трудна за
 овладяване) мощ. Не е проблем ако ги избягвате, докато свикнете с тях.
 
-Да се учи Perl е като да учите нов говорим език. Ще научите няколко думи, ще ги
-съберете в изречение и скоро ще се радвате на простички разговори. Майсторлъка
-идва с практикуване на писането и четенето. Не е нужно да владеете всяка подробност,
-за да бъдете продуктивни, но принципите в тази глава са основополагащи
-за развитието ви като програмист.
+Да се учи Perl е като да учите нов човешки език. Ще научите няколко думи, ще ги
+съберете в изречение и скоро ще се радвате на простички разговори. Майсторлъкът
+идва с практикуване на писането и четенето. Не е нужно да владеете всяка
+подробност,за да бъдете продуктивни, но принципите в тази глава са
+основополагащи за развитието ви като програмист.
 
-As another design goal, Perl tries to avoid surprising experienced (Perl)
-programmers.  For example, adding two variables (C<$first_num + $second_num>)
-is obviously a numeric operation (L<numeric_operators>); the addition operator
-must treat both as numeric values to produce a numeric result. No matter the
-contents of C<$first_num> and C<$second_num>, Perl will coerce them to numeric
-values (L<numeric_coercion>). You've expressed your intent to treat them as
-numbers by using a numeric operator. Perl happily does so.
+Друга цел, която е изначално заложена в Perl, е да се намалят исненадите у
+опитните (Perl-) програмисти. например събрането на две променливи
+(C<$first_num + $second_num>) очевидно е операция с числа (L<numeric_operators>).
+Операторът за събиране трябва да третира пададените му аргументи като числови
+стойности и да произведе числов резултат. Независимо от съдържанието на
+C<$first_num> и C<$second_num>, Perl ще ги ползва като числови стоиности
+(L<numeric_coercion>). Вие сте изразили намерението си да ги третирате като
+числа, използвайки оператора за събиране. Perl го прави с удоволствие.
 
 X<DWIM>
-X<principle of least astonishment>
+X<принцип на минималната изненада>
 
-Perl adepts often call this principle I<DWIM>, or I<do what I mean>.  Another
-phrasing is that Perl follows the I<principle of least astonishment>.  Given a
-cursory understanding of Perl (especially context; L<context_philosophy>), it
-should be possible to understand the intent of an unfamiliar Perl expression.
-You will develop this skill.
+Опитните Perl-програмисти често наричат това 
+I<принципът DWIM> - I<do what I mean> (I<правѝ каквото си мисля>).
+Казано по друг начин, Perl следва I<принципът на минималната изненада>.
+Ако имате повърхностни знания за Perl (особено по отношение на контекста; L<context_philosophy>), би трябвало лесно да разберете намерението, което
+е имал авторът на непознат за вас израз в Perl. Ще развиете това умение.
 
-X<baby Perl>
+X<бебешки Perl>
 
-Perl's expressivity also allows novices to write useful programs without having
-to understand everything. The resulting code is often called I<baby Perl>, in
-the sense that most everyone wants to help babies learn to communicate well.
-Everyone begins as a novice. Through practice and learning from more experienced
-programmers, you will understand and adopt more powerful idioms and techniques.
+Изразителността на Perl също позволява на новаците да пишат полезни програми,
+без да е необходимо да разбират всичко. Резултатът от такова писане, често се
+нарича I<baby Perl>. Всеки иска да помогне на бебетата да общуват добре.
+Всеки е новак в началото. Чрез практика и като учите от по-опитните програмисти,
+ще усвоите и разберете по-мощните идиоми и техники.
 
-Оптитният Perl-хакер например би умножил всеки елемент от даден списък с числа
+Опитният Perl-хакер например би умножил всеки елемент от даден списък с числа
 по следния начин:
 
 =begin programlisting
