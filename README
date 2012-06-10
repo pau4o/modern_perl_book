@@ -111,3 +111,21 @@ from Onyx Neon Press:
 
 The electronic versions are available for free, with no restrictions on free
 redistribution.
+
+Translating Modern Perl
+---------------------------
+
+Translating the book started in Bulgarian.
+Krasimir Berov modified the C<./build/tools/build_chapters.pl>
+and <./build/tools/build_html.pl>
+in his repo (https://github.com/kberov/modern_perl_book/) to accept a language parameter.
+The implementation is still buggy but allows him to preview how the translated text looks.
+
+So, to generate the book in HTML in Bulgarian:
+
+    > cd /where/you/cloned/the/repo
+    > ./build/tools/build_chapters.pl bg
+    > ./build/tools/build_html.pl bg
+
+Now go to build/html/_bg and review the translated chapters.
+
