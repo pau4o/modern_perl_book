@@ -5,20 +5,18 @@ Z<context_philosophy>
 X<context>
 
 В говоримите езици значението на една дума или фраза може да зависи
-от начина, по който се използва. Текущият контекст изяснява специфичното
-значение.
+от начина, по който се използва. Текущият I<контекст> изяснява специфичното
+значение. Например неправилното използване на множествено число в
+"Моля дайте ми един хамбургери"N<Множественото число не съответства на
+количеството.> звучи грешно. Подобен е случаят с грешното използване на род
+за съществителните имена - "la gâteau"N<Използваният член е за женски род, а
+съществителното е в мъжки род.>. Това е смешно за французите. Забележете
+също например, че на английски език местоимението "you" или съществителното
+"sheep" могат да са в единствено или множествено число в зависимост от контекста.
 
-In spoken languages, the meaning of a word or phrase may depend on how you use
-it; the local I<context> helps clarify the intent. For example, the
-inappropriate pluralization of "Please give me one hamburgers!"N<The
-pluralization of the noun differs from the amount.> sounds wrong, just as the
-incorrect gender of "la gato"N<The article is feminine, but the noun is
-masculine.> makes native speakers chuckle. Consider also the pronoun "you" or
-the noun "sheep" which can be singular or plural depending on context.
-
-Context in Perl is similar. It governs the amount as well as the kind of data
-to use. Perl will happily attempt to provide exactly what you ask for--provided
-you do so by choosing the appropriate context.
+Контекстът в Perl е подобен. Той влияе на количеството и вида данни, които
+се ползват. Perl ще се опита да достави каквото сте му поискали -- като се
+предполага, че вие сте избрали подходящия контекст.
 
 Certain Perl operations produce different behaviors when you want zero, one, or
 many results. A specific construct in Perl may do something different if you
