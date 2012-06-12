@@ -1,5 +1,7 @@
 =encoding utf8
 
+Z<vocabulary>
+
 =head1 NAME
 
 Vocabulary - English to Bulgarian
@@ -24,6 +26,9 @@ translation with or without description
 
 And so on. Add your own items below. This file can be easily searched using "grep" or using "Find" functionality in a browser.
 
+=item Amount context
+
+Количествен контекст
 
 =back
 

@@ -33,19 +33,18 @@ your assumptions about context were incorrect. If instead you're cognizant of
 context, your code will be more correct--and cleaner, flexible, and more
 concise.
 
-=head2 Void, Scalar, and List Context
+=head2 Празен, Скаларен и Списъчен Контекст
 
 Z<amount_context>
 
-X<context; amount>
-X<amount context>
+X<контекст; количество>
+X<количествен контекст>
 
-I<Amount context> context governs I<how many> items you expect from an
-operation. The English language's subject-verb number agreement is a close
-parallel. Even without knowing the formal description of this linguistic
-principle, you probably understand the error in the sentence "Perl are a fun
-language". In Perl, the number of items you request determines how many you
-get.
+I<Количественият контекст> определя броя на върнатите стойности от дадена
+операция. Съгласуването на глаголите по число е добър пример от английския език. 
+Дори без да знаете формалното определение за този лингвистичен принцип,
+най-вероятно разбирате грешката в изречението "Perl са забавен език".
+В Perl получаваш толкова стойности колкото си заявилN<Представете си го като единствено и множествено число в човешките езици. (бел. прев.)>.
 
 X<void context>
 X<context; void>

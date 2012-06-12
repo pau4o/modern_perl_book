@@ -104,3 +104,7 @@ U<http://search.cpan.org/perldoc?App::perlbrew>>.
 L<credits> 
 
 За всички останали грешки, вината е единствено на твърдоглавия автор. 
+
+The vocabulary below will be removed right before finishing the translation.
+
+L<vocabulary>
