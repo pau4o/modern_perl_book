@@ -1,0 +1,39 @@
+=encoding utf8
+
+=head1 NAME
+
+Vocabulary - English to Bulgarian
+
+=head1 DESCRIPTION
+
+This is a file in which we will put translations of words,
+or phrases upon which somebody suggested and others silently agreed to follow or are agreed upon after discussions.
+
+
+=over
+
+=item Void, Scalar, and List Context
+
+Празен, скаларен и списъчен контекст
+
+=item  x
+
+translation with or without description
+
+=item y
+
+And so on. Add your own items below. This file can be easily searched using "grep" or using "Find" functionality in a browser.
+
+
+=back
+
+
+
+
+
+
+
+
+
+
+
