@@ -1,0 +1,8 @@
+=encoding utf8
+
+=head0 Vocabularies
+
+This chapter is created just to hold vocabularies created and used by translators.
+
+L<vocabulary_bg>
+
