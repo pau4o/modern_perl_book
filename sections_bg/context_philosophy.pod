@@ -20,11 +20,11 @@ X<context>
 се ползват. Perl ще се опита да достави каквото сте му поискали -- като се
 предполага, че вие сте избрали подходящия контекст.
 
-Certain Perl operations produce different behaviors when you want zero, one, or
-many results. A specific construct in Perl may do something different if you
-write "Do this, but I don't care about any results" compared to "Do this, and I
-expect multiple results." Other operations allow you to specify whether you
-expect to work with numeric data, textual data, or true or false data.
+Някои операции в Perl имат различно поведение в зависимост от това дали искате
+да ви върнат нула, един или повече резултати. Един и същи израз може да направи 
+едно ако кажеш "Направи това, но не ми трябва резултата." и съвсем друго 
+ако си казал "Направи това и очаквам няколко резултата". Други изрази пък ви дават
+възможността да уточните, че очквате число, текст или булев резултат (истина/лъжа).
 
 Context can be tricky if you try to write or read Perl code as a series of
 single expressions extracted from their environments. You may find yourself
