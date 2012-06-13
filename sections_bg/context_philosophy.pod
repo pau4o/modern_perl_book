@@ -26,12 +26,11 @@ X<context>
 ако си казал "Направи това и очаквам няколко резултата". Други изрази пък ви дават
 възможността да уточните, че очквате число, текст или булев резултат (истина/лъжа).
 
-Context can be tricky if you try to write or read Perl code as a series of
-single expressions extracted from their environments. You may find yourself
-slapping your forehead after a long debugging session when you discover that
-your assumptions about context were incorrect. If instead you're cognizant of
-context, your code will be more correct--and cleaner, flexible, and more
-concise.
+Контекстът може да се окаже коварен ако се опитате да пишете код
+като проста последователност от изрази извадени от "контекста".
+Ще има случаи, в които се плесвате по челото след дълго дебъгване, открили,
+че предположенията ви относно контекста са грешни. Ако обаче сте познавачи,
+кодът ви ще е сбит, правилен и по-чист.
 
 =head2 Празен, Скаларен и Списъчен Контекст
 
