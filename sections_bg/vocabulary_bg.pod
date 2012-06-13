@@ -1,10 +1,8 @@
 =encoding utf8
 
-Z<vocabulary>
+=head1 Vocabulary - English to Bulgarian
 
-=head1 NAME
-
-Vocabulary - English to Bulgarian
+Z<vocabulary_bg>
 
 =head1 DESCRIPTION
 
